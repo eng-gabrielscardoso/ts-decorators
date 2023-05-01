@@ -1,0 +1,34 @@
+{
+  "name": "ts-decorators",
+  "version": "0.0.1",
+  "description": "A little project to learn more about Typescript Decorators",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "dev": "node ./dist/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eng-gabrielscardoso/ts-decorators.git"
+  },
+  "keywords": [
+    "typescript",
+    "decorators",
+    "javascript",
+    "npm",
+    "nodejs",
+    "node",
+    "design-patterns",
+    "design-pattern"
+  ],
+  "author": "Gabriel Santos Cardoso <eng.gabrielscardoso@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eng-gabrielscardoso/ts-decorators/issues"
+  },
+  "homepage": "https://github.com/eng-gabrielscardoso/ts-decorators#readme",
+  "dependencies": {
+    "typescript": "^5.0.4"
+  }
+}
