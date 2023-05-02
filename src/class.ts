@@ -1,8 +1,8 @@
 import { Log } from "./factories";
 
-function setAPIVersion(apiVersion: string): (constructor: any) => any {
-  return (constructor: any) => {
-    return class APIVersion extends constructor {
+function setAPIVersion(apiVersion: string): (propertyKey: any) => any {
+  return (propertyKey: any) => {
+    return class APIVersion extends propertyKey {
       public version: string = apiVersion;
     };
   };

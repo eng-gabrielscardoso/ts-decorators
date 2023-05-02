@@ -1,18 +1,18 @@
 export function MinLength(length: number): any {
-  return (target: any, key: string) => {
-    let val = target[key];
+  return (target: any, propertyKey: string) => {
+    let val = target[propertyKey];
 
     const getter = () => val;
 
     const setter = (value: string) => {
       if (value.length < length) {
-        throw new Error(`${key} must be greater than ${length}`);
+        throw new Error(`${propertyKey} must be greater than ${length}`);
       }
 
       val = value;
     };
 
-    Object.defineProperty(target, key, {
+    Object.defineProperty(target, propertyKey, {
       get: getter,
       set: setter,
     });
