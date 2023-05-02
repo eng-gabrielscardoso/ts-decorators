@@ -1,4 +1,4 @@
-function Log(type: "error" | "warning" | "info", message: string): (target: unknown) => void {
+export function Log(type: "error" | "warning" | "info", message: string): (target: unknown) => void {
   return (target: unknown) => {
     console.log(`[${type.toUpperCase()}] - ${message}`);
   };
